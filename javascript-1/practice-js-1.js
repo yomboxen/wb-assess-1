@@ -193,7 +193,9 @@ let secondFunctionScope = ['global', 'functional'];
   Invoke the callback passing the first item in the array as an argument.
 */
 
-
+function firstItem(arr, cb) {
+  cb(arr[0])
+}
 
 //////////////////PROBLEM 16////////////////////
 /* 
@@ -203,7 +205,13 @@ let secondFunctionScope = ['global', 'functional'];
   Otherwise, invoke the callback passing in false.
 */
 
-//CODE HERE
+function isItBob(obj, cb) {
+  if(obj.name === 'Bob') {
+    cb(true)
+  } else {
+    cb(false)
+  }
+}
 
 //////////////////PROBLEM 17////////////////////
 /*
@@ -212,7 +220,11 @@ let secondFunctionScope = ['global', 'functional'];
   Then invoke the callback, passing in the doubled array.
 */
 
-//CODE HERE
+function giveMeDoubles(arr, cb) {
+  for(i = 0; i < arr.length; i++) {
+    arr[i] * 2
+  }
+}
 
 //////////////////PROBLEM 18////////////////////
 /*
