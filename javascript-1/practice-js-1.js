@@ -223,7 +223,7 @@ function isItBob(obj, cb) {
 function giveMeDoubles(arr, cb) {
   for(i = 0; i < arr.length; i++) {
     arr[i] * 2
-  }
+  } cb(arr)
 }
 
 //////////////////PROBLEM 18////////////////////
@@ -251,4 +251,14 @@ function giveMeDoubles(arr, cb) {
   }
 */
 
-//CODE HERE
+function carFactory(make, model, year) {
+  obj = {
+    make: '',
+    model: '',
+    year: ''
+  }; if(obj.year > 2018) {
+    obj.isNew = true
+  } else {
+    obj.isNew = false
+  } return obj
+}
