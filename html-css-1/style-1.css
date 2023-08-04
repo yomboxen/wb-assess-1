@@ -6,7 +6,7 @@
 
 .welcome {
     display: inline-block;
-    padding-top: 10%;
+    padding-top: 100px;
     padding-left: 10px;
     padding-right: 10px;
     font-size: 30px;
@@ -34,7 +34,7 @@
     padding-right: 10px;
 }
 
-.html-section {
+.main-section {
     border: 5px dotted black;
     width: 90%;
     padding: 10px;
@@ -54,4 +54,9 @@
 
 .lang-description {
     font-size: 12px;
+}
+
+.css-logo {
+    width: 100px;
+    float: right;
 }
