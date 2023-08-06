@@ -60,11 +60,11 @@ function removeItem(index) {
 function checkGroceryCount() {
     if(groceries.length > 5) {
         return 'That looks like a big trip'
-    } else if(groceries.length = 1) {
+    } else if(groceries.length === 1) {
         return '1 item'
-    } else if(groceries.length > 1 && groceries.length < 5) {
+    } else if(groceries.length > 1 && groceries.length <= 5) {
         return groceries.length + ' items'
-    } 
+    }
 }
 
 //////////////////Check out your code!////////////////////
